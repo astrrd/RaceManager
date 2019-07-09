@@ -1,0 +1,68 @@
+{% extends 'layout.html' %}
+
+
+{% block title %} Racemanager {% endblock %}
+
+{% block head %}
+{% parent %}
+<link rel="stylesheet" href="extra.css">
+{% endblock %}
+
+{% block content %}
+<h1>Racemanager</h1>
+<p>  <a href="/subirFichero">Subir Fichero</a> </p>
+<p>  <a href="/sportsevents">Ver carreras</a> </p>
+<p>  <a href="/sportsevent">Añadir carrera</a> </p>
+<p>  <a href="/competitors">Ver Competidores</a> </p>
+<p>  <a href="/contacto">Contactar</a> </p>
+
+<h2>HTML Table</h2>
+
+<table>
+    <tr>
+        <th>Metodos</th>
+        <th>descripcion</th>
+        <th>link</th>
+    </tr>
+    <tr>
+        <td>GET CARRERAS</td>
+        <td>muestra todas las carreras</td>
+        <td><a href="/sportsevents">Ver carreras</a></td>
+    </tr>
+    <tr>
+        <td>POST CARRERA</td>
+        <td>Añade una carrera</td>
+        <td><a href="/sportsevent">Añadir carrera</a></td>
+    </tr>
+    <tr>
+        <td>DELETE CARRERA</td>
+        <td>Elimina una carrera</td>
+        <td><a href="/sportsevent">Eliminar carrera</a></td>
+    </tr>
+    <tr>
+        <td>PUT CARRERA</td>
+        <td>Actualiza una carrera</td>
+        <td>UK</td>
+    </tr>
+    <tr>
+        <td>GET COMPETITOR</td>
+        <td>Muestra todos los competidores</td>
+        <td><a href="/competitors">Ver Competidores</a> </td>
+    </tr>
+    <tr>
+        <td>POST COMPETITOR</td>
+        <td>Añade una carrera</td>
+        <td><a href="/sportsevent">Añadir competidor</a></td>
+    </tr>
+    <tr>
+        <td>DELETE COMPETITOR </td>
+        <td> Elimina una carrera</td>
+        <td><a href="/sportsevent">Eliminar competidos</a></td>
+    </tr>
+    <tr>
+        <td>PUT COMPETITOR</td>
+        <td>Actualiza competidor</td>
+        <td>UK</td>
+    </tr>
+</table>
+{% endblock %}

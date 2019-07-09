@@ -1,0 +1,32 @@
+
+{% extends 'layout.html' %}
+
+
+{% block title %} Racemanager - Cargar fichero JSON-LD {% endblock %}
+
+{% block head %}
+{% parent %}
+<link rel="stylesheet" href="extra.css">
+{% endblock %}
+
+{% block content %}
+
+
+
+<h2 >{{action}} Evento</h2>
+
+
+<form method="post" action="{{url+ id +'/'+ idc }}">
+    <fieldset>
+        <legend>Competitor:</legend>
+
+        <label for="name">Nombre</label>
+        <br>
+        <input type="text" class="form-control" name="name"
+               placeholder="Nombre evento" required="true" id="name"/>
+
+        <input type="submit" value="{{action}}">
+    </fieldset>
+</form>
+{% endblock %}
+

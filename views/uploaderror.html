@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+
+{% block title %} Racemanager - Cargar fichero JSON-LD {% endblock %}
+
+{% block head %}
+{% parent %}
+<link rel="stylesheet" href="extra.css">
+{% endblock %}
+
+{% block content %}
+<h1>Racemanager - Error cargando fichero JSON-LD</h1>
+ <h2>Error al subir fichero</h2>
+<h3> {{error}}</h3>
+<p>  <a href="/subirFichero">Subir Fichero</a> </p>
+<p>  <a href="/sportsevents">Ver carreras</a> </p>
+<p>  <a href="/sportsevent">Añadir carrera</a> </p>
+{% endblock %}

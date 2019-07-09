@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+
+{% block title %} Racemanager - SportsEvent details {% endblock %}
+
+
+{% block head %}
+{% parent %}
+    <link rel="stylesheet" href="extra.css">
+{% endblock %}
+
+
+{% block content %}
+
+
+    <h1>Racemanager - SportsEvent details</h1>
+    <h2>Carrera: {{ datos.name }}</h2>
+
+    <h3>Datos</h3>
+    <ul>
+        <li>Name: {{ datos.name }}</li>
+        <li>URL: {{ datos.url }}</li>
+        <li>Description: {{ datos.description }}</li>
+        <li>Start Date: {{ datos.startDate }}</li>
+        <li>Location: {{ datos.location.name}}</li>
+    </ul>
+
+    <h3>Corredores</h3>
+    <ul>
+        {% for c in  datos.competitor%}
+            <li>Competitor: {{ c.name }}</li>
+        {%endfor%}
+    </ul>
+
+
+<p><a href="{{'/sportsevent/'+ datos.id }}">Actualizar</a> |
+    <a href="{{'/sportsevents/'+ datos.id }}">Ver como json</a> |
+    <a href="{{'/sportsevents/'+ datos.id }}">Eliminar carrera</a>
+</p>
+
+<p><a href="{{'/sportsevents' }}">Ver todas las carreras</a></p>
+
+{% endblock %}
+

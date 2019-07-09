@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+
+{% block title %} Racemanager - SportsEvent List {% endblock %}
+
+
+{% block head %}
+{% parent %}
+    <link rel="stylesheet" href="extra.css">
+{% endblock %}
+
+
+{% block content %}
+
+    <h1>{{ datos.name }}</h1>
+
+    <ul>
+        {% for d in datos.carreras %}
+            <li>
+
+                <h2>
+                    {{ d.name }}
+                </h2>
+                <h3>Datos</h3>
+                <ul>
+                    <li>URL: {{ d.url }}</li>
+                    <li>Description: {{ d.description }}</li>
+                    <li>Start Date: {{ d.startDate }}</li>
+                    <li>Location: {{ d.location.name}}</li>
+                </ul>
+
+                <h3>Corredores</h3>
+                <ul>
+                    {% for c in  d.competitor%}
+                        <li>Competitor: {{ c.name }}</li>
+                    {%endfor%}
+                </ul>
+
+            </li>
+        {%endfor%}
+    </ul>
+
+{% endblock %}

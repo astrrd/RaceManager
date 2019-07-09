@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+
+{% block title %} Racemanager - Cargar fichero JSON-LD {% endblock %}
+
+{% block head %}
+{% parent %}
+<link rel="stylesheet" href="extra.css">
+{% endblock %}
+
+{% block content %}
+<h1>Racemanager - Cargar fichero JSON-LD</h1>
+
+
+
+<form action="/subirFichero" enctype="multipart/form-data" method="post">
+    <fieldset>
+        <legend>Subir fichero</legend>
+
+
+        <input type="file" name="fichero"><br>
+        <input type="submit" value="Enviar">
+    </fieldset>
+</form>
+
+
+{% endblock %}
+
+

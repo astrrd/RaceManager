@@ -1,0 +1,101 @@
+{
+  "name": "Listado de carreras",
+  "carreras": [
+    {
+      "@context": "http://schema.org",
+      "@type": "SportsEvent",
+      "name": "La Subidona de Piedrallacia",
+      "url": "http://www.lasubidona.com/",
+      "description": "Carrera por montaña modalidad vertical",
+      "startDate": "2019-03-09T16:00",
+      "competitor": [
+        {
+          "@type": "Person",
+          "name": "Corredor1"
+        },
+        {
+          "@type": "Person",
+          "name": "Corredor2"
+        },
+        {
+          "@type": "Person",
+          "name": "Corredor3"
+        },
+        {
+          "@type": "Person",
+          "name": "Corredor4"
+        },
+        {
+          "@type": "Person",
+          "name": "Corredor5"
+        },
+        {
+          "@type": "Person",
+          "name": "Corredor6"
+        },
+        {
+          "@type": "Person",
+          "name": "Corredor7"
+        }
+      ],
+      "location": {
+        "@type": "Place",
+        "name": "Rozagás, Peñamellera Alta, Asturias",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Rozagás, Peñamellera Alta",
+          "addressRegion": "Asturias"
+        },
+        "hasMap": "http://www.lasubidona.com/src/images/location-map.png"
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "SportsEvent",
+      "name": "Tielvertical",
+      "url": "http://www.tielvertical.com/",
+      "description": "Carrera por montaña",
+      "startDate": "2019-07-27T17:30",
+      "competitor": [
+        {
+          "@type": "Person",
+          "name": "Corredor1"
+        },
+        {
+          "@type": "Person",
+          "name": "Corredor2"
+        },
+        {
+          "@type": "Person",
+          "name": "Corredor3"
+        },
+        {
+          "@type": "Person",
+          "name": "Corredor4"
+        },
+        {
+          "@type": "Person",
+          "name": "Corredor5"
+        },
+        {
+          "@type": "Person",
+          "name": "Corredor6"
+        },
+        {
+          "@type": "Person",
+          "name": "Corredor7"
+        }
+      ],
+      "location": {
+        "@type": "Place",
+        "name": "Tielve, Cabrales, Asturias",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Tielve, Cabrales",
+          "addressRegion": "Asturias"
+        },
+        "hasMap": "http://www.tielvertical.com/src/images/location-map.png"
+      }
+    }
+  ]
+}

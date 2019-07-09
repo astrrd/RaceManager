@@ -1,0 +1,67 @@
+
+{% extends 'layout.html' %}
+
+
+{% block title %} Racemanager - Cargar fichero JSON-LD {% endblock %}
+
+{% block head %}
+{% parent %}
+<link rel="stylesheet" href="extra.css">
+{% endblock %}
+
+{% block content %}
+
+
+
+<h2 >Añadir Evento</h2>
+
+
+<form method="post" action="/sportsevents">
+    <fieldset>
+        <legend>Carrera:</legend>
+
+        <label for="name">Nombre</label>
+        <br>
+        <input type="text" class="form-control" name="name"
+               placeholder="Nombre evento" required="true" id="name"/>
+        <br>
+        <label for="url">url</label>
+        <br>
+        <input type="text" class="form-control" name="url"
+               placeholder="url" required="true" id="url"/>
+        <br>
+        <label for="description">Descripción</label>
+        <br>
+        <input type="text" class="form-control" name="description"
+               placeholder="Describa el evento" required="true" id="description"/>
+        <br>
+        <label for="startDate">Fecha de Inicio</label>
+        <br>
+        <input type="text" class="form-control" name="startDate"
+               placeholder="Fecha de comienzo" required="true" id="startDate"/>
+        <br>
+        <label for="locationName">Nombre del Lugar</label>
+        <br>
+        <input type="text" class="form-control" name="locationName"
+               placeholder="Lugar" required="true" id="locationName"/>
+        <br>
+        <label>Localidad</label>
+        <br>
+        <input type="text" class="form-control" name="adressLocality"
+               placeholder="Lugar" required="true" id="adressLocality"/>
+        <br>
+        <label for="addressRegion">Región</label>
+        <br>
+        <input type="text" class="form-control" name="addressRegion"
+               placeholder="Lugar" required="true" id="addressRegion"/>
+        <br>
+        <label for="locationMap">Región en el mapa</label>
+        <br>
+        <input type="text" class="form-control" name="locationMap"
+               placeholder="Lugar" required="true" id="locationMap"/>
+        <br>
+        <input type="submit" value="Agregar carrera">
+    </fieldset>
+</form>
+{% endblock %}
+

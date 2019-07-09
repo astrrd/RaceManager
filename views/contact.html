@@ -1,0 +1,44 @@
+
+{% extends 'layout.html' %}
+
+
+{% block title %} Racemanager - Contactar {% endblock %}
+
+{% block head %}
+{% parent %}
+<link rel="stylesheet" href="extra.css">
+{% endblock %}
+
+{% block content %}
+
+
+
+<h2 >Contactar/h2>
+
+
+<form method="post" action="/contacto">
+    <fieldset>
+        <legend>Contactar:</legend>
+
+        <label for="asunto">Asunto</label>
+        <br>
+        <input type="text" class="form-control" name="asunto"
+               placeholder="asunto" required="true" id="asunto"/>
+        <br>
+        <label for="correo">Correo</label>
+        <br>
+        <input type="text" class="form-control" name="correo"
+               placeholder="algo@algo.es" required="true" id="correo"/>
+        <br>
+        <label for="contenido">contenido</label>
+        <br>
+        <input type="text" class="form-control" name="contenido"
+               placeholder="Contenido " required="true" id="contenido"/>
+        <br>
+
+
+        <input type="submit" value="Mandar correo">
+    </fieldset>
+</form>
+{% endblock %}
+

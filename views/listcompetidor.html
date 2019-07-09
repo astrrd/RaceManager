@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+
+{% block title %} Racemanager - SportsEvent List {% endblock %}
+
+
+{% block head %}
+{% parent %}
+    <link rel="stylesheet" href="extra.css">
+{% endblock %}
+
+
+{% block content %}
+<h1>Competidores:</h1>
+      <ul>
+        {% for d in datos %}
+                <ul>
+                    <li>Name:  {{ d.name }}</li>
+
+                </ul>
+        {%endfor%}
+    </ul>
+
+{% endblock %}
